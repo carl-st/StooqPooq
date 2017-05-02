@@ -17,6 +17,9 @@
 		F915CF331EB4CECD00E15B27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F915CF311EB4CECD00E15B27 /* LaunchScreen.storyboard */; };
 		F915CF3E1EB4CECD00E15B27 /* StooqPooqTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F915CF3D1EB4CECD00E15B27 /* StooqPooqTests.swift */; };
 		F915CF491EB4CECD00E15B27 /* StooqPooqUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F915CF481EB4CECD00E15B27 /* StooqPooqUITests.swift */; };
+		F98F21041EB8FAA4000D0E96 /* GPWService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98F21031EB8FAA4000D0E96 /* GPWService.swift */; };
+		F98F21061EB90129000D0E96 /* StockIndexModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98F21051EB90129000D0E96 /* StockIndexModel.swift */; };
+		F98F21081EB9020C000D0E96 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98F21071EB9020C000D0E96 /* PersistenceManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,9 @@
 		F915CF441EB4CECD00E15B27 /* StooqPooqUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StooqPooqUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F915CF481EB4CECD00E15B27 /* StooqPooqUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StooqPooqUITests.swift; sourceTree = "<group>"; };
 		F915CF4A1EB4CECD00E15B27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F98F21031EB8FAA4000D0E96 /* GPWService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GPWService.swift; path = Services/GPWService.swift; sourceTree = "<group>"; };
+		F98F21051EB90129000D0E96 /* StockIndexModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StockIndexModel.swift; path = MainScreen/StockIndexModel.swift; sourceTree = "<group>"; };
+		F98F21071EB9020C000D0E96 /* PersistenceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersistenceManager.swift; path = Managers/PersistenceManager.swift; sourceTree = "<group>"; };
 		FBCE689C156BF6E16FADBD24 /* Pods-StooqPooqUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StooqPooqUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StooqPooqUITests/Pods-StooqPooqUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,8 +144,9 @@
 			isa = PBXGroup;
 			children = (
 				F915CF281EB4CECD00E15B27 /* AppDelegate.swift */,
-				F915CF2A1EB4CECD00E15B27 /* ViewController.swift */,
-				F915CF2C1EB4CECD00E15B27 /* Main.storyboard */,
+				F98F20FD1EB8F894000D0E96 /* MainScreen */,
+				F98F20FC1EB8F88A000D0E96 /* Services */,
+				F98F20FB1EB8F875000D0E96 /* Managers */,
 				F915CF2F1EB4CECD00E15B27 /* Assets.xcassets */,
 				F915CF311EB4CECD00E15B27 /* LaunchScreen.storyboard */,
 				F915CF341EB4CECD00E15B27 /* Info.plist */,
@@ -165,6 +172,64 @@
 			path = StooqPooqUITests;
 			sourceTree = "<group>";
 		};
+		F98F20FB1EB8F875000D0E96 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				F98F21071EB9020C000D0E96 /* PersistenceManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		F98F20FC1EB8F88A000D0E96 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F98F21031EB8FAA4000D0E96 /* GPWService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		F98F20FD1EB8F894000D0E96 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				F98F21011EB8F952000D0E96 /* Model */,
+				F98F20FF1EB8F8BB000D0E96 /* Storyboards */,
+				F98F20FE1EB8F8B1000D0E96 /* ViewControllers */,
+				F98F21001EB8F92F000D0E96 /* ViewModel */,
+			);
+			name = MainScreen;
+			sourceTree = "<group>";
+		};
+		F98F20FE1EB8F8B1000D0E96 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F915CF2A1EB4CECD00E15B27 /* ViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F98F20FF1EB8F8BB000D0E96 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F915CF2C1EB4CECD00E15B27 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		F98F21001EB8F92F000D0E96 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		F98F21011EB8F952000D0E96 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F98F21051EB90129000D0E96 /* StockIndexModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -178,6 +243,7 @@
 				F915CF231EB4CECD00E15B27 /* Resources */,
 				90DE5845EB188C0B602372BF /* [CP] Embed Pods Frameworks */,
 				9179FB96694EB97C23FAEF90 /* [CP] Copy Pods Resources */,
+				F98F21021EB8F99F000D0E96 /* Generate Storyboard Constants */,
 			);
 			buildRules = (
 			);
@@ -442,6 +508,20 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StooqPooqTests/Pods-StooqPooqTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F98F21021EB8F99F000D0E96 /* Generate Storyboard Constants */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Storyboard Constants";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo $(bash -l -c  \"source ~/.bash_profile && cd StooqPooq && bundle exec sbconstants -w UIConstants.swift\")";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -449,6 +529,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F98F21041EB8FAA4000D0E96 /* GPWService.swift in Sources */,
+				F98F21081EB9020C000D0E96 /* PersistenceManager.swift in Sources */,
+				F98F21061EB90129000D0E96 /* StockIndexModel.swift in Sources */,
 				F915CF2B1EB4CECD00E15B27 /* ViewController.swift in Sources */,
 				F915CF291EB4CECD00E15B27 /* AppDelegate.swift in Sources */,
 			);
@@ -709,6 +792,7 @@
 				F915CF4F1EB4CECD00E15B27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F915CF501EB4CECD00E15B27 /* Build configuration list for PBXNativeTarget "StooqPooqTests" */ = {
 			isa = XCConfigurationList;
@@ -717,6 +801,7 @@
 				F915CF521EB4CECD00E15B27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F915CF531EB4CECD00E15B27 /* Build configuration list for PBXNativeTarget "StooqPooqUITests" */ = {
 			isa = XCConfigurationList;
@@ -725,6 +810,7 @@
 				F915CF551EB4CECD00E15B27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
