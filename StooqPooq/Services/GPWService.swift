@@ -16,7 +16,7 @@ class GPWService {
     private let gpwIndexUrl = "https://static.stooq.com/pp/g.js"
     
     private var indexNames: [String] = []
-    private var indexValues: [Float] = []
+    private var indexValues: [Double] = []
     
     func fetchGPW() {
         do {
@@ -34,13 +34,14 @@ class GPWService {
                 
                 for anchor in doc.xpath(indexValuesXPathQuery) {
                     print(anchor.stringValue)
-                    if let indexValue = anchor.numberValue as? Float {
+                    if let indexValue = anchor.numberValue as? Double {
                         indexValues.append(indexValue)
                     }
                 }
                 
                 for (index, indexName) in indexNames.enumerated() {
-                    // create stock object and store it in realm
+                    let stock = StockIndex(withName: indexName, andValue: indexValues[index])
+                    PersistenceManager.sharedInstance.createOrUpdate(stock)
                 }
                 
             } catch let error {

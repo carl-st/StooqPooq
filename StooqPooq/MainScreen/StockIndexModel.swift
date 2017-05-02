@@ -11,9 +11,8 @@ import ObjectMapper
 
 class StockIndex: Object {
     
-    private var id = ""
-    private var name = ""
-    private var value: Double = 0.0
+    var name = ""
+    var value: Double = 0.0
     
     convenience init(withName name: String, andValue value: Double) {
         self.init()
@@ -22,7 +21,7 @@ class StockIndex: Object {
     }
     
     override static func primaryKey() -> String? {
-        return "id"
+        return "name"
     }
     
     required convenience init?(map: Map) {
@@ -30,10 +29,8 @@ class StockIndex: Object {
     }
     
     func mapping(map: Map) {
-        id <- map["id"]
         name <- map["name"]
         value <- map["value"]
     }
-    
     
 }

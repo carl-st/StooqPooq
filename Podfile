@@ -7,10 +7,7 @@ target 'StooqPooq' do
   # Pods for Regease
   pod 'Realm', :git => 'https://github.com/realm/realm-cocoa.git', :branch => 'master', submodules: true
   pod 'RealmSwift', :git => 'https://github.com/realm/realm-cocoa.git', :branch => 'master', submodules: true
-  pod 'Alamofire', '~> 4.0'
-  pod 'AlamofireImage', '~> 3.1'
-  pod 'AlamofireNetworkActivityIndicator', '~> 2.0'
-  pod 'AlamofireObjectMapper', '~> 4.0'
+  pod 'ObjectMapper', '~> 2.2'
   pod 'Fuzi', '~> 1.0.0'
 
   target 'StooqPooqTests' do

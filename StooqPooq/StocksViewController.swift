@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  StocksViewController.swift
 //  StooqPooq
 //
 //  Created by Karol Stępień on 29.04.2017.
@@ -7,13 +7,12 @@
 //
 
 import UIKit
-import Fuzi
 
-class ViewController: UIViewController {
+class StocksViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
 
     }
 
