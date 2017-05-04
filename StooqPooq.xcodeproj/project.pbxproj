@@ -17,6 +17,10 @@
 		F915CF331EB4CECD00E15B27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F915CF311EB4CECD00E15B27 /* LaunchScreen.storyboard */; };
 		F915CF3E1EB4CECD00E15B27 /* StooqPooqTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F915CF3D1EB4CECD00E15B27 /* StooqPooqTests.swift */; };
 		F915CF491EB4CECD00E15B27 /* StooqPooqUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F915CF481EB4CECD00E15B27 /* StooqPooqUITests.swift */; };
+		F94312261EBB057B00664A16 /* StockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94312251EBB057B00664A16 /* StockTableViewCell.swift */; };
+		F94312281EBB092A00664A16 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94312271EBB092A00664A16 /* SettingsViewController.swift */; };
+		F943122E1EBB0C2E00664A16 /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F943122D1EBB0C2E00664A16 /* Appearance.swift */; };
+		F94312301EBB8C2900664A16 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F943122F1EBB8C2900664A16 /* GlobalConstants.swift */; };
 		F98F21041EB8FAA4000D0E96 /* GPWService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98F21031EB8FAA4000D0E96 /* GPWService.swift */; };
 		F98F21061EB90129000D0E96 /* StockIndexModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98F21051EB90129000D0E96 /* StockIndexModel.swift */; };
 		F98F21081EB9020C000D0E96 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98F21071EB9020C000D0E96 /* PersistenceManager.swift */; };
@@ -62,6 +66,10 @@
 		F915CF441EB4CECD00E15B27 /* StooqPooqUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StooqPooqUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F915CF481EB4CECD00E15B27 /* StooqPooqUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StooqPooqUITests.swift; sourceTree = "<group>"; };
 		F915CF4A1EB4CECD00E15B27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F94312251EBB057B00664A16 /* StockTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StockTableViewCell.swift; path = MainScreen/StockTableViewCell.swift; sourceTree = "<group>"; };
+		F94312271EBB092A00664A16 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = Settings/SettingsViewController.swift; sourceTree = "<group>"; };
+		F943122D1EBB0C2E00664A16 /* Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Appearance.swift; path = Other/Appearance.swift; sourceTree = "<group>"; };
+		F943122F1EBB8C2900664A16 /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobalConstants.swift; path = Other/GlobalConstants.swift; sourceTree = "<group>"; };
 		F98F21031EB8FAA4000D0E96 /* GPWService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GPWService.swift; path = Services/GPWService.swift; sourceTree = "<group>"; };
 		F98F21051EB90129000D0E96 /* StockIndexModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StockIndexModel.swift; path = MainScreen/StockIndexModel.swift; sourceTree = "<group>"; };
 		F98F21071EB9020C000D0E96 /* PersistenceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersistenceManager.swift; path = Managers/PersistenceManager.swift; sourceTree = "<group>"; };
@@ -147,8 +155,10 @@
 			children = (
 				F915CF281EB4CECD00E15B27 /* AppDelegate.swift */,
 				F98F20FD1EB8F894000D0E96 /* MainScreen */,
+				F94312291EBB093300664A16 /* Settings */,
 				F98F20FC1EB8F88A000D0E96 /* Services */,
 				F98F20FB1EB8F875000D0E96 /* Managers */,
+				F943122C1EBB0C0A00664A16 /* Other */,
 				F915CF2F1EB4CECD00E15B27 /* Assets.xcassets */,
 				F915CF311EB4CECD00E15B27 /* LaunchScreen.storyboard */,
 				F915CF341EB4CECD00E15B27 /* Info.plist */,
@@ -174,6 +184,47 @@
 			path = StooqPooqUITests;
 			sourceTree = "<group>";
 		};
+		F94312241EBB055800664A16 /* VIews */ = {
+			isa = PBXGroup;
+			children = (
+				F94312251EBB057B00664A16 /* StockTableViewCell.swift */,
+			);
+			name = VIews;
+			sourceTree = "<group>";
+		};
+		F94312291EBB093300664A16 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F943122B1EBB094800664A16 /* Storyboards */,
+				F943122A1EBB093D00664A16 /* ViewControllers */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		F943122A1EBB093D00664A16 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F94312271EBB092A00664A16 /* SettingsViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F943122B1EBB094800664A16 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		F943122C1EBB0C0A00664A16 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				F943122D1EBB0C2E00664A16 /* Appearance.swift */,
+				F943122F1EBB8C2900664A16 /* GlobalConstants.swift */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
 		F98F20FB1EB8F875000D0E96 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +246,7 @@
 			children = (
 				F98F21011EB8F952000D0E96 /* Model */,
 				F98F20FF1EB8F8BB000D0E96 /* Storyboards */,
+				F94312241EBB055800664A16 /* VIews */,
 				F98F20FE1EB8F8B1000D0E96 /* ViewControllers */,
 				F98F21001EB8F92F000D0E96 /* ViewModel */,
 			);
@@ -532,12 +584,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F94312261EBB057B00664A16 /* StockTableViewCell.swift in Sources */,
+				F943122E1EBB0C2E00664A16 /* Appearance.swift in Sources */,
+				F94312301EBB8C2900664A16 /* GlobalConstants.swift in Sources */,
 				F98F21041EB8FAA4000D0E96 /* GPWService.swift in Sources */,
 				F98F21081EB9020C000D0E96 /* PersistenceManager.swift in Sources */,
 				F98F21061EB90129000D0E96 /* StockIndexModel.swift in Sources */,
 				F915CF2B1EB4CECD00E15B27 /* StocksViewController.swift in Sources */,
 				F915CF291EB4CECD00E15B27 /* AppDelegate.swift in Sources */,
 				F98F210A1EB90861000D0E96 /* StocksViewModel.swift in Sources */,
+				F94312281EBB092A00664A16 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,12 +12,14 @@ import ObjectMapper
 class StockIndex: Object {
     
     var name = ""
+    var time = ""
     var value: Double = 0.0
     
-    convenience init(withName name: String, andValue value: Double) {
+    convenience init(withName name: String, value: Double, andTime time: String) {
         self.init()
         self.name = name
         self.value = value
+        self.time = time
     }
     
     override static func primaryKey() -> String? {
@@ -30,6 +32,7 @@ class StockIndex: Object {
     
     func mapping(map: Map) {
         name <- map["name"]
+        time <- map["time"]
         value <- map["value"]
     }
     

@@ -13,10 +13,12 @@ class GPWService {
     
     private let indexNamesXPathQuery = "//a[@id='pp_s']"
     private let indexValuesXPathQuery = "//td[@id='pp_v']"
+    private let indexTimeXPathQuery = "//td[@id='pp_d']"
     private let gpwIndexUrl = "https://static.stooq.com/pp/g.js"
     
     private var indexNames: [String] = []
     private var indexValues: [Double] = []
+    private var indexTimes: [String] = []
     
     func fetchGPW() {
         do {
@@ -39,8 +41,13 @@ class GPWService {
                     }
                 }
                 
+                for anchor in doc.xpath(indexNamesXPathQuery) {
+                    print(anchor.stringValue)
+                    indexTimes.append(anchor.stringValue)
+                }
+                
                 for (index, indexName) in indexNames.enumerated() {
-                    let stock = StockIndex(withName: indexName, andValue: indexValues[index])
+                    let stock = StockIndex(withName: indexName, value: indexValues[index], andTime: indexTimes[index])
                     PersistenceManager.sharedInstance.createOrUpdate(stock)
                 }
                 
