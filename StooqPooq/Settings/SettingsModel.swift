@@ -18,6 +18,11 @@ class Settings: Object {
         return "id"
     }
     
+    convenience init(timerInterval: Int) {
+        self.init()
+        self.timerInterval = timerInterval
+    }
+    
     required convenience init?(map: Map) {
         self.init()
     }

@@ -31,11 +31,14 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="29" minimumValue="5" maximumValue="500" stepValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="I8t-C8-WLE">
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="30" minimumValue="5" maximumValue="500" stepValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="I8t-C8-WLE">
                                 <rect key="frame" x="141" y="314" width="94" height="29"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="stepperAction:" destination="5HQ-3B-NJ3" eventType="valueChanged" id="heo-ah-ksz"/>
+                                </connections>
                             </stepper>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gjf-Ip-ePN">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gjf-Ip-ePN">
                                 <rect key="frame" x="20" y="576" width="335" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Hma-Ba-Iuf"/>
@@ -60,7 +63,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Refresh time" id="Fcm-Tq-If4"/>
                     <connections>
+                        <outlet property="footerLabel" destination="Gjf-Ip-ePN" id="JYv-6x-uVp"/>
                         <outlet property="timerLabel" destination="vAC-bK-zHZ" id="wCt-vd-Nak"/>
+                        <outlet property="timerStepper" destination="I8t-C8-WLE" id="2Uz-x4-28E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zPM-c3-ZIO" userLabel="First Responder" sceneMemberID="firstResponder"/>
