@@ -20,6 +20,8 @@ class GPWService {
     private var indexValues: [Double] = []
     private var indexTimes: [String] = []
     
+    static let sharedInstance = GPWService()
+    
     func fetchGPW() {
         do {
         let data = try Data(contentsOf: URL(string: gpwIndexUrl)!, options: NSData.ReadingOptions.alwaysMapped)
@@ -41,7 +43,7 @@ class GPWService {
                     }
                 }
                 
-                for anchor in doc.xpath(indexNamesXPathQuery) {
+                for anchor in doc.xpath(indexTimeXPathQuery) {
                     print(anchor.stringValue)
                     indexTimes.append(anchor.stringValue)
                 }

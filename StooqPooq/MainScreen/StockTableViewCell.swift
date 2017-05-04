@@ -10,11 +10,22 @@ import UIKit
 
 class StockTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var indexNameLabel: UILabel!
+    @IBOutlet weak var indexTimeLabel: UILabel!
+    @IBOutlet weak var indexValueLabel: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-   
+        indexValueLabel.layer.cornerRadius = 4.0
+        indexValueLabel.clipsToBounds = true
     }
 
+    func configure(withStockIndex stock: StockIndex) {
+        indexNameLabel.text = stock.name
+        indexValueLabel.text = "\(stock.value)"
+        indexTimeLabel.text = stock.time
+    }
 
 
 }

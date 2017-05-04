@@ -14,6 +14,7 @@ class SettingsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.barStyle = .black
         
         timerLabel.layer.borderWidth = 5.0
         timerLabel.layer.borderColor = UIColor.white.cgColor

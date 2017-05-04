@@ -21,6 +21,8 @@
 		F94312281EBB092A00664A16 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94312271EBB092A00664A16 /* SettingsViewController.swift */; };
 		F943122E1EBB0C2E00664A16 /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F943122D1EBB0C2E00664A16 /* Appearance.swift */; };
 		F94312301EBB8C2900664A16 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F943122F1EBB8C2900664A16 /* GlobalConstants.swift */; };
+		F94312321EBBDA7000664A16 /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94312311EBBDA7000664A16 /* UIConstants.swift */; };
+		F94312351EBBE37D00664A16 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94312341EBBE37D00664A16 /* SettingsModel.swift */; };
 		F98F21041EB8FAA4000D0E96 /* GPWService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98F21031EB8FAA4000D0E96 /* GPWService.swift */; };
 		F98F21061EB90129000D0E96 /* StockIndexModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98F21051EB90129000D0E96 /* StockIndexModel.swift */; };
 		F98F21081EB9020C000D0E96 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98F21071EB9020C000D0E96 /* PersistenceManager.swift */; };
@@ -70,6 +72,8 @@
 		F94312271EBB092A00664A16 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = Settings/SettingsViewController.swift; sourceTree = "<group>"; };
 		F943122D1EBB0C2E00664A16 /* Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Appearance.swift; path = Other/Appearance.swift; sourceTree = "<group>"; };
 		F943122F1EBB8C2900664A16 /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobalConstants.swift; path = Other/GlobalConstants.swift; sourceTree = "<group>"; };
+		F94312311EBBDA7000664A16 /* UIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
+		F94312341EBBE37D00664A16 /* SettingsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsModel.swift; path = Settings/SettingsModel.swift; sourceTree = "<group>"; };
 		F98F21031EB8FAA4000D0E96 /* GPWService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GPWService.swift; path = Services/GPWService.swift; sourceTree = "<group>"; };
 		F98F21051EB90129000D0E96 /* StockIndexModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StockIndexModel.swift; path = MainScreen/StockIndexModel.swift; sourceTree = "<group>"; };
 		F98F21071EB9020C000D0E96 /* PersistenceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersistenceManager.swift; path = Managers/PersistenceManager.swift; sourceTree = "<group>"; };
@@ -195,6 +199,7 @@
 		F94312291EBB093300664A16 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				F94312331EBBE36400664A16 /* Model */,
 				F943122B1EBB094800664A16 /* Storyboards */,
 				F943122A1EBB093D00664A16 /* ViewControllers */,
 			);
@@ -221,8 +226,17 @@
 			children = (
 				F943122D1EBB0C2E00664A16 /* Appearance.swift */,
 				F943122F1EBB8C2900664A16 /* GlobalConstants.swift */,
+				F94312311EBBDA7000664A16 /* UIConstants.swift */,
 			);
 			name = Other;
+			sourceTree = "<group>";
+		};
+		F94312331EBBE36400664A16 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F94312341EBBE37D00664A16 /* SettingsModel.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		F98F20FB1EB8F875000D0E96 /* Managers */ = {
@@ -584,6 +598,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F94312351EBBE37D00664A16 /* SettingsModel.swift in Sources */,
 				F94312261EBB057B00664A16 /* StockTableViewCell.swift in Sources */,
 				F943122E1EBB0C2E00664A16 /* Appearance.swift in Sources */,
 				F94312301EBB8C2900664A16 /* GlobalConstants.swift in Sources */,
@@ -592,6 +607,7 @@
 				F98F21061EB90129000D0E96 /* StockIndexModel.swift in Sources */,
 				F915CF2B1EB4CECD00E15B27 /* StocksViewController.swift in Sources */,
 				F915CF291EB4CECD00E15B27 /* AppDelegate.swift in Sources */,
+				F94312321EBBDA7000664A16 /* UIConstants.swift in Sources */,
 				F98F210A1EB90861000D0E96 /* StocksViewModel.swift in Sources */,
 				F94312281EBB092A00664A16 /* SettingsViewController.swift in Sources */,
 			);

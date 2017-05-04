@@ -16,7 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         applyAppearance()
-        // Override point for customization after application launch.
+        
+        if PersistenceManager.sharedInstance.getSettings() == nil {
+            let settings = Settings()
+            PersistenceManager.sharedInstance.createOrUpdate(settings)
+        }
+        
+        GPWService.sharedInstance.fetchGPW()
+
         return true
     }
 

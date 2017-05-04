@@ -11,9 +11,9 @@ import ObjectMapper
 
 class StockIndex: Object {
     
-    var name = ""
-    var time = ""
-    var value: Double = 0.0
+    dynamic var name = ""
+    dynamic var time = ""
+    dynamic var value: Double = 0.0
     
     convenience init(withName name: String, value: Double, andTime time: String) {
         self.init()

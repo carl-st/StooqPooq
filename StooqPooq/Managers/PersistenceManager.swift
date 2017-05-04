@@ -57,5 +57,8 @@ class PersistenceManager {
         return realm.objects(StockIndex.self)
     }
     
+    func getSettings() -> Settings? {
+        return realm.objects(Settings.self).first
+    }
 }
 

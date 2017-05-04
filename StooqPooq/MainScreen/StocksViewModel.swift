@@ -12,13 +12,13 @@ class StocksViewModel {
     var stocksNotificationToken: NotificationToken? = nil
     var persistenceManager: PersistenceManager
     var reload: (() -> Void)?
-    var stocks: Results<StockIndex>
+    var stocks: [StockIndex] = []
     
     init(reload: (() -> Void)? = nil, persistence: PersistenceManager = PersistenceManager.sharedInstance) {
         self.reload = reload
         self.persistenceManager = persistence
         
-        self.stocks = persistence.getStocks()
+        self.stocks = Array(persistence.getStocks())
         
         let realm = try! Realm()
         let results = realm.objects(StockIndex.self)
@@ -30,7 +30,7 @@ class StocksViewModel {
             case .initial:
                 break
             case .update(_, _, _, _):
-                self?.stocks = persistence.getStocks()
+                self?.stocks = Array(persistence.getStocks())
                 
                 reload()
                 break
