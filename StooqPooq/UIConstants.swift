@@ -3,6 +3,8 @@
 public enum StoryboardNames : String {
     case LaunchScreen
     case Main
+    case Settings
+    case Stocks
 }
 
 public enum TableViewCellReuseIdentifier : String {

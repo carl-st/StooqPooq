@@ -11,7 +11,7 @@ import ObjectMapper
 
 class Settings: Object {
     
-    dynamic var id = 0
+    dynamic var id = 0 // We're storing only one settings object
     dynamic var timerInterval = 30
     
     override static func primaryKey() -> String? {

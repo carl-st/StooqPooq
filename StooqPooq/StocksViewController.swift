@@ -19,12 +19,7 @@ class StocksViewController: UIViewController, UITableViewDelegate, UITableViewDa
         navigationController?.navigationBar.barStyle = .black
         viewModel = StocksViewModel(reload: { [weak self] in
             self?.tableView.reloadData()
-            if let tableView = self?.tableView {
-                for i in 0..<tableView.numberOfRows(inSection: 0) {
-                    let cell = tableView.cellForRow(at: IndexPath(item: i, section: 0)) as? StockTableViewCell
-                    cell?.animateHighlight()
-                }
-            }
+            self?.highlightChanges()
         }, persistence: PersistenceManager.sharedInstance)
         tableView.reloadData()
     }
@@ -39,7 +34,14 @@ class StocksViewController: UIViewController, UITableViewDelegate, UITableViewDa
         timer.invalidate()
     }
     
-    func refreshStockData() {
+    private func highlightChanges() {
+        for i in 0..<tableView.numberOfRows(inSection: 0) {
+            let cell = tableView.cellForRow(at: IndexPath(item: i, section: 0)) as? StockTableViewCell
+            cell?.animateHighlightIfNeeded()
+        }
+    }
+    
+    dynamic private func refreshStockData() {
         print("refreshing...")
         GPWService.sharedInstance.fetchGPW()
     }

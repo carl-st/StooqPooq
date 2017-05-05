@@ -47,8 +47,7 @@ class GPWService {
                     print(anchor.stringValue)
                     indexTimes.append(anchor.stringValue)
                 }
-                
-//                PersistenceManager.sharedInstance.realm.beginWrite()
+            
                 let stocks = PersistenceManager.sharedInstance.getStocks()
                 for (index, indexName) in indexNames.enumerated() {
                     let newStockIndex = StockIndex(withName: indexName, value: indexValues[index], andTime: indexTimes[index])
@@ -62,12 +61,10 @@ class GPWService {
                             }
                         }
                     } else {
-//                        stock.updated = true
                         stockObjects.append(newStockIndex)
                     }
                 }
             
-//                try PersistenceManager.sharedInstance.realm.commitWrite()
                 PersistenceManager.sharedInstance.createOrUpdate(stockObjects)
 
         } catch let error {

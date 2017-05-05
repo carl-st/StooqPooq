@@ -10,9 +10,9 @@ import UIKit
 
 class SettingsViewController: UIViewController {
 
-    @IBOutlet var timerLabel: UILabel!
-    @IBOutlet var footerLabel: UILabel!
-    @IBOutlet var timerStepper: UIStepper!
+    @IBOutlet private var timerLabel: UILabel!
+    @IBOutlet private var footerLabel: UILabel!
+    @IBOutlet private var timerStepper: UIStepper!
     
     var timerCounter = 0
     
@@ -41,7 +41,7 @@ class SettingsViewController: UIViewController {
         PersistenceManager.sharedInstance.createOrUpdate(newSettings)
     }
 
-    @IBAction func stepperAction(_ sender: Any) {
+    @IBAction private func stepperAction(_ sender: Any) {
         timerCounter = Int(timerStepper.value)
         timerLabel.text = "\(timerCounter)s"
     }

@@ -17,7 +17,6 @@ class StocksViewModel {
     init(reload: (() -> Void)? = nil, persistence: PersistenceManager = PersistenceManager.sharedInstance) {
         self.reload = reload
         self.persistenceManager = persistence
-        
         self.stocks = Array(persistence.getStocks())
         
         let realm = try! Realm()

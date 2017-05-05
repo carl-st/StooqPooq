@@ -10,10 +10,10 @@ import UIKit
 
 class StockTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var indexNameLabel: UILabel!
-    @IBOutlet weak var indexTimeLabel: UILabel!
-    @IBOutlet weak var indexValueLabel: UILabel!
-    var stockIndex = StockIndex()
+    @IBOutlet private var indexNameLabel: UILabel!
+    @IBOutlet private var indexTimeLabel: UILabel!
+    @IBOutlet private var indexValueLabel: UILabel!
+    private var stockIndex = StockIndex()
     
     
     override func awakeFromNib() {
@@ -30,7 +30,7 @@ class StockTableViewCell: UITableViewCell {
         self.stockIndex = stock
     }
     
-    func animateHighlight() {
+    func animateHighlightIfNeeded() {
         if let settings = PersistenceManager.sharedInstance.getSettings() {
             var components = DateComponents()
             components.second = settings.timerInterval * -1

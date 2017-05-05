@@ -28,6 +28,8 @@
 		F98F21081EB9020C000D0E96 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98F21071EB9020C000D0E96 /* PersistenceManager.swift */; };
 		F98F210A1EB90861000D0E96 /* StocksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98F21091EB90861000D0E96 /* StocksViewModel.swift */; };
 		F9B4433C1EBC74B2001E41BA /* Date+StooqPooq.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B4433B1EBC74B2001E41BA /* Date+StooqPooq.swift */; };
+		F9B4433E1EBC83E4001E41BA /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9B4433D1EBC83E4001E41BA /* Settings.storyboard */; };
+		F9B443401EBC848B001E41BA /* Stocks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9B4433F1EBC848B001E41BA /* Stocks.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,8 @@
 		F98F21071EB9020C000D0E96 /* PersistenceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersistenceManager.swift; path = Managers/PersistenceManager.swift; sourceTree = "<group>"; };
 		F98F21091EB90861000D0E96 /* StocksViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StocksViewModel.swift; path = MainScreen/StocksViewModel.swift; sourceTree = "<group>"; };
 		F9B4433B1EBC74B2001E41BA /* Date+StooqPooq.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+StooqPooq.swift"; path = "Other/Date+StooqPooq.swift"; sourceTree = "<group>"; };
+		F9B4433D1EBC83E4001E41BA /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Settings.storyboard; path = Settings/Settings.storyboard; sourceTree = "<group>"; };
+		F9B4433F1EBC848B001E41BA /* Stocks.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Stocks.storyboard; path = MainScreen/Stocks.storyboard; sourceTree = "<group>"; };
 		FBCE689C156BF6E16FADBD24 /* Pods-StooqPooqUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StooqPooqUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StooqPooqUITests/Pods-StooqPooqUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -160,14 +164,14 @@
 			isa = PBXGroup;
 			children = (
 				F915CF281EB4CECD00E15B27 /* AppDelegate.swift */,
+				F915CF2C1EB4CECD00E15B27 /* Main.storyboard */,
+				F915CF311EB4CECD00E15B27 /* LaunchScreen.storyboard */,
+				F915CF341EB4CECD00E15B27 /* Info.plist */,
 				F98F20FD1EB8F894000D0E96 /* MainScreen */,
 				F94312291EBB093300664A16 /* Settings */,
 				F98F20FC1EB8F88A000D0E96 /* Services */,
 				F98F20FB1EB8F875000D0E96 /* Managers */,
 				F943122C1EBB0C0A00664A16 /* Other */,
-				F915CF2F1EB4CECD00E15B27 /* Assets.xcassets */,
-				F915CF311EB4CECD00E15B27 /* LaunchScreen.storyboard */,
-				F915CF341EB4CECD00E15B27 /* Info.plist */,
 			);
 			path = StooqPooq;
 			sourceTree = "<group>";
@@ -219,6 +223,7 @@
 		F943122B1EBB094800664A16 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				F9B4433D1EBC83E4001E41BA /* Settings.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -226,6 +231,7 @@
 		F943122C1EBB0C0A00664A16 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				F915CF2F1EB4CECD00E15B27 /* Assets.xcassets */,
 				F943122D1EBB0C2E00664A16 /* Appearance.swift */,
 				F943122F1EBB8C2900664A16 /* GlobalConstants.swift */,
 				F94312311EBBDA7000664A16 /* UIConstants.swift */,
@@ -281,7 +287,7 @@
 		F98F20FF1EB8F8BB000D0E96 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				F915CF2C1EB4CECD00E15B27 /* Main.storyboard */,
+				F9B4433F1EBC848B001E41BA /* Stocks.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -423,8 +429,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F915CF331EB4CECD00E15B27 /* LaunchScreen.storyboard in Resources */,
+				F9B443401EBC848B001E41BA /* Stocks.storyboard in Resources */,
 				F915CF301EB4CECD00E15B27 /* Assets.xcassets in Resources */,
 				F915CF2E1EB4CECD00E15B27 /* Main.storyboard in Resources */,
+				F9B4433E1EBC83E4001E41BA /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
