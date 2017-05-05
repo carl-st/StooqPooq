@@ -25,6 +25,16 @@ class StockTableViewCell: UITableViewCell {
         indexNameLabel.text = stock.name
         indexValueLabel.text = "\(stock.value)"
         indexTimeLabel.text = stock.time
+        if stock.updated == true {
+            animateHighlight()
+        }
+    }
+    
+    func animateHighlight() {
+        indexValueLabel.backgroundColor = Colors.accent
+        UIView.animate(withDuration: 5.0, delay: 5.0, animations: { [weak self] in
+            self?.indexValueLabel.backgroundColor = Colors.primary
+        })
     }
 
 

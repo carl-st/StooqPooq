@@ -17,7 +17,7 @@ class StocksViewController: UIViewController, UITableViewDelegate, UITableViewDa
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.barStyle = .black
-        viewModel = StocksViewModel(reload: { [weak self] () -> Void in
+        viewModel = StocksViewModel(reload: { [weak self] in
             self?.tableView.reloadData()
         }, persistence: PersistenceManager.sharedInstance)
         tableView.reloadData()

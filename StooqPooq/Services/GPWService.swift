@@ -19,6 +19,7 @@ class GPWService {
     private var indexNames: [String] = []
     private var indexValues: [Double] = []
     private var indexTimes: [String] = []
+    private var stockObjects: [StockIndex] = []
     
     static let sharedInstance = GPWService()
     
@@ -48,10 +49,26 @@ class GPWService {
                     indexTimes.append(anchor.stringValue)
                 }
                 
+                
+                let stocks = PersistenceManager.sharedInstance.getStocks()
                 for (index, indexName) in indexNames.enumerated() {
                     let stock = StockIndex(withName: indexName, value: indexValues[index], andTime: indexTimes[index])
-                    PersistenceManager.sharedInstance.createOrUpdate(stock)
+                    if stocks.count > 0 {
+                        for stock in stocks {
+                            if stock.name == indexName && indexValues[index] != stock.value {
+                                stock.updated = true
+                                stockObjects.append(stock)
+                            }
+                        }
+                    } else {
+                        stock.updated = true
+                        stockObjects.append(stock)
+                    }
+                    
+                    
                 }
+                
+                PersistenceManager.sharedInstance.createOrUpdate(stockObjects)
                 
             } catch let error {
                 print(error)

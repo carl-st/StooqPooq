@@ -32,6 +32,7 @@ class SettingsViewController: UIViewController {
         if let settings = PersistenceManager.sharedInstance.getSettings() {
             timerCounter = settings.timerInterval
             timerLabel.text = "\(timerCounter)s"
+            timerStepper.value = Double(timerCounter)
         }
     }
 
