@@ -27,6 +27,7 @@
 		F98F21061EB90129000D0E96 /* StockIndexModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98F21051EB90129000D0E96 /* StockIndexModel.swift */; };
 		F98F21081EB9020C000D0E96 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98F21071EB9020C000D0E96 /* PersistenceManager.swift */; };
 		F98F210A1EB90861000D0E96 /* StocksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98F21091EB90861000D0E96 /* StocksViewModel.swift */; };
+		F9B4433C1EBC74B2001E41BA /* Date+StooqPooq.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B4433B1EBC74B2001E41BA /* Date+StooqPooq.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		F98F21051EB90129000D0E96 /* StockIndexModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StockIndexModel.swift; path = MainScreen/StockIndexModel.swift; sourceTree = "<group>"; };
 		F98F21071EB9020C000D0E96 /* PersistenceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersistenceManager.swift; path = Managers/PersistenceManager.swift; sourceTree = "<group>"; };
 		F98F21091EB90861000D0E96 /* StocksViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StocksViewModel.swift; path = MainScreen/StocksViewModel.swift; sourceTree = "<group>"; };
+		F9B4433B1EBC74B2001E41BA /* Date+StooqPooq.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+StooqPooq.swift"; path = "Other/Date+StooqPooq.swift"; sourceTree = "<group>"; };
 		FBCE689C156BF6E16FADBD24 /* Pods-StooqPooqUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StooqPooqUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StooqPooqUITests/Pods-StooqPooqUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -227,6 +229,7 @@
 				F943122D1EBB0C2E00664A16 /* Appearance.swift */,
 				F943122F1EBB8C2900664A16 /* GlobalConstants.swift */,
 				F94312311EBBDA7000664A16 /* UIConstants.swift */,
+				F9B4433B1EBC74B2001E41BA /* Date+StooqPooq.swift */,
 			);
 			name = Other;
 			sourceTree = "<group>";
@@ -603,6 +606,7 @@
 				F943122E1EBB0C2E00664A16 /* Appearance.swift in Sources */,
 				F94312301EBB8C2900664A16 /* GlobalConstants.swift in Sources */,
 				F98F21041EB8FAA4000D0E96 /* GPWService.swift in Sources */,
+				F9B4433C1EBC74B2001E41BA /* Date+StooqPooq.swift in Sources */,
 				F98F21081EB9020C000D0E96 /* PersistenceManager.swift in Sources */,
 				F98F21061EB90129000D0E96 /* StockIndexModel.swift in Sources */,
 				F915CF2B1EB4CECD00E15B27 /* StocksViewController.swift in Sources */,

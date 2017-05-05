@@ -29,7 +29,6 @@ class GPWService {
             
             guard let html = String(data: data, encoding: .utf8) else { return }
             
-            do {
                 let doc = try HTMLDocument(string: html, encoding: String.Encoding.utf8)
                 
                 for anchor in doc.xpath(indexNamesXPathQuery) {
@@ -49,30 +48,27 @@ class GPWService {
                     indexTimes.append(anchor.stringValue)
                 }
                 
-                
+//                PersistenceManager.sharedInstance.realm.beginWrite()
                 let stocks = PersistenceManager.sharedInstance.getStocks()
                 for (index, indexName) in indexNames.enumerated() {
-                    let stock = StockIndex(withName: indexName, value: indexValues[index], andTime: indexTimes[index])
+                    let newStockIndex = StockIndex(withName: indexName, value: indexValues[index], andTime: indexTimes[index])
                     if stocks.count > 0 {
                         for stock in stocks {
                             if stock.name == indexName && indexValues[index] != stock.value {
-                                stock.updated = true
-                                stockObjects.append(stock)
+                                newStockIndex.updated = Date()
+                                stockObjects.append(newStockIndex)
+                                break
                             }
                         }
                     } else {
-                        stock.updated = true
-                        stockObjects.append(stock)
+//                        stock.updated = true
+                        stockObjects.append(newStockIndex)
                     }
-                    
-                    
                 }
-                
+            
+//                try PersistenceManager.sharedInstance.realm.commitWrite()
                 PersistenceManager.sharedInstance.createOrUpdate(stockObjects)
-                
-            } catch let error {
-                print(error)
-            }
+
         } catch let error {
             print(error)
         }

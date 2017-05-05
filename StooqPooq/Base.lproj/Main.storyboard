@@ -107,7 +107,6 @@
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4,38" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DbC-Qw-8su">
                                                     <rect key="frame" x="292" y="7" width="75" height="40"/>
-                                                    <color key="backgroundColor" red="0.1764705882" green="0.59215686270000001" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="SxS-2M-9oo"/>
                                                         <constraint firstAttribute="width" constant="75" id="j9x-fe-q8Y"/>
