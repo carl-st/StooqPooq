@@ -38,7 +38,7 @@ class GPWService {
                 
                 for anchor in doc.xpath(indexValuesXPathQuery) {
                     print(anchor.stringValue)
-                    if let indexValue = anchor.numberValue as? Double {
+                    if let indexValue = Double(anchor.stringValue) {
                         indexValues.append(indexValue)
                     }
                 }
@@ -54,7 +54,6 @@ class GPWService {
                     if stocks.count > 0 {
                         for stock in stocks {
                             if stock.name == indexName && indexValues[index] != stock.value {
-                                newStockIndex.updated = Date()
                                 newStockIndex.difference = indexValues[index] - stock.value
                                 stockObjects.append(newStockIndex)
                                 break
