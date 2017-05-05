@@ -37,7 +37,8 @@ class StockTableViewCell: UITableViewCell {
             let beforeRefreshDate = Calendar.current.date(byAdding: components, to: Date())!
             
             if stockIndex.updated.isBetween(date: Date(), andDate: beforeRefreshDate) {
-                indexValueLabel.layer.backgroundColor = Colors.accent.cgColor
+                let highlightColor = stockIndex.difference > 0 ? Colors.accent.cgColor : Colors.warn.cgColor
+                indexValueLabel.layer.backgroundColor = highlightColor
                 UIView.animate(withDuration: 1.0, delay: 1.0, animations: { [weak self] in
                     self?.indexValueLabel.layer.backgroundColor = Colors.primary.cgColor
                 })

@@ -56,6 +56,7 @@ class GPWService {
                         for stock in stocks {
                             if stock.name == indexName && indexValues[index] != stock.value {
                                 newStockIndex.updated = Date()
+                                newStockIndex.difference = indexValues[index] - stock.value
                                 stockObjects.append(newStockIndex)
                                 break
                             }

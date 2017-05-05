@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Refresh time-->
+        <!--Refreshing-->
         <scene sceneID="myB-Vm-9Pv">
             <objects>
                 <viewController id="5HQ-3B-NJ3" customClass="SettingsViewController" customModule="StooqPooq" customModuleProvider="target" sceneMemberID="viewController">
@@ -25,14 +25,16 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30s" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vAC-bK-zHZ">
                                 <rect key="frame" x="60" y="124" width="255" height="255"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="vAC-bK-zHZ" secondAttribute="height" multiplier="1:1" id="VTM-Sf-cUl"/>
+                                    <constraint firstAttribute="width" secondItem="vAC-bK-zHZ" secondAttribute="height" multiplier="1:1" id="7aA-LM-Pk0"/>
+                                    <constraint firstAttribute="height" constant="255" id="OWg-DZ-gQ5"/>
+                                    <constraint firstAttribute="width" constant="255" id="RLT-Vb-vCf"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="80"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="30" minimumValue="5" maximumValue="500" stepValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="I8t-C8-WLE">
-                                <rect key="frame" x="141" y="314" width="94" height="29"/>
+                                <rect key="frame" x="140.5" y="399" width="94" height="29"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <action selector="stepperAction:" destination="5HQ-3B-NJ3" eventType="valueChanged" id="heo-ah-ksz"/>
@@ -50,18 +52,16 @@
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="I8t-C8-WLE" firstAttribute="top" secondItem="vAC-bK-zHZ" secondAttribute="bottom" constant="-65" id="0BK-iG-UgE"/>
+                            <constraint firstItem="I8t-C8-WLE" firstAttribute="top" secondItem="vAC-bK-zHZ" secondAttribute="bottom" constant="20" id="0BK-iG-UgE"/>
                             <constraint firstAttribute="trailing" secondItem="Gjf-Ip-ePN" secondAttribute="trailing" constant="20" id="Heb-54-uxA"/>
                             <constraint firstItem="xXs-cI-7tB" firstAttribute="top" secondItem="Gjf-Ip-ePN" secondAttribute="bottom" constant="12" id="L4G-fY-qTi"/>
                             <constraint firstItem="I8t-C8-WLE" firstAttribute="centerX" secondItem="PHU-Gk-amG" secondAttribute="centerX" id="PjX-2t-QjI"/>
-                            <constraint firstItem="vAC-bK-zHZ" firstAttribute="leading" secondItem="PHU-Gk-amG" secondAttribute="leading" constant="60" id="TiF-tD-LPQ"/>
                             <constraint firstItem="vAC-bK-zHZ" firstAttribute="centerX" secondItem="PHU-Gk-amG" secondAttribute="centerX" id="aaR-GB-vRH"/>
                             <constraint firstItem="vAC-bK-zHZ" firstAttribute="top" secondItem="Ny5-hE-kvS" secondAttribute="bottom" constant="60" id="afe-d2-ndU"/>
-                            <constraint firstAttribute="trailing" secondItem="vAC-bK-zHZ" secondAttribute="trailing" constant="60" id="sHG-lN-r9S"/>
                             <constraint firstItem="Gjf-Ip-ePN" firstAttribute="leading" secondItem="PHU-Gk-amG" secondAttribute="leading" constant="20" id="zoh-f9-7Rn"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Refresh time" id="Fcm-Tq-If4"/>
+                    <navigationItem key="navigationItem" title="Refreshing" id="Fcm-Tq-If4"/>
                     <connections>
                         <outlet property="footerLabel" destination="Gjf-Ip-ePN" id="JYv-6x-uVp"/>
                         <outlet property="timerLabel" destination="vAC-bK-zHZ" id="wCt-vd-Nak"/>
@@ -72,7 +72,7 @@
             </objects>
             <point key="canvasLocation" x="1600.8" y="500.59970014992507"/>
         </scene>
-        <!--Stocks-->
+        <!--GPW Stocks-->
         <scene sceneID="qgf-NB-ssE">
             <objects>
                 <viewController id="aNz-My-sKF" customClass="StocksViewController" customModule="StooqPooq" customModuleProvider="target" sceneMemberID="viewController">
@@ -97,7 +97,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WIG20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NFc-wu-c9V">
-                                                    <rect key="frame" x="8" y="8" width="276" height="23"/>
+                                                    <rect key="frame" x="8" y="8" width="221" height="23"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="23" id="dJm-6y-yHa"/>
                                                     </constraints>
@@ -106,7 +106,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4,38" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DbC-Qw-8su">
-                                                    <rect key="frame" x="292" y="7" width="75" height="40"/>
+                                                    <rect key="frame" x="237" y="7" width="75" height="40"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="SxS-2M-9oo"/>
                                                         <constraint firstAttribute="width" constant="75" id="j9x-fe-q8Y"/>
@@ -116,7 +116,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:43" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFV-cg-Qiq">
-                                                    <rect key="frame" x="8" y="31" width="276" height="16"/>
+                                                    <rect key="frame" x="8" y="31" width="221" height="16"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
@@ -156,7 +156,7 @@
                             <constraint firstItem="f89-3G-e2f" firstAttribute="leading" secondItem="ElI-MV-4QR" secondAttribute="leading" id="ygv-2T-G1A"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Stocks" id="Kc5-UY-0kn"/>
+                    <navigationItem key="navigationItem" title="GPW Stocks" id="Kc5-UY-0kn"/>
                     <connections>
                         <outlet property="tableView" destination="f89-3G-e2f" id="Aoz-cs-vWP"/>
                     </connections>

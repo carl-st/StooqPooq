@@ -15,6 +15,7 @@ class StockIndex: Object {
     dynamic var time = ""
     dynamic var value: Double = 0.0
     dynamic var updated = Date()
+    dynamic var difference: Double = 0.0
     
     convenience init(withName name: String, value: Double, andTime time: String) {
         self.init()
