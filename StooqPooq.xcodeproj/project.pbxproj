@@ -1,0 +1,906 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52FD4BAA0B94CC243CAD6EDB /* Pods_StooqPooq.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D7FD0228F3D8ED96E6C648 /* Pods_StooqPooq.framework */; };
+		97E91BBAAA10587C93FD67A0 /* Pods_StooqPooqTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2284BCB4C4335F9F332F9FDE /* Pods_StooqPooqTests.framework */; };
+		BC6C2958BD753CA9A55A83C3 /* Pods_StooqPooqUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC91C39EE4F0892940DC13A /* Pods_StooqPooqUITests.framework */; };
+		F915CF291EB4CECD00E15B27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F915CF281EB4CECD00E15B27 /* AppDelegate.swift */; };
+		F915CF2B1EB4CECD00E15B27 /* StocksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F915CF2A1EB4CECD00E15B27 /* StocksViewController.swift */; };
+		F915CF2E1EB4CECD00E15B27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F915CF2C1EB4CECD00E15B27 /* Main.storyboard */; };
+		F915CF301EB4CECD00E15B27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F915CF2F1EB4CECD00E15B27 /* Assets.xcassets */; };
+		F915CF331EB4CECD00E15B27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F915CF311EB4CECD00E15B27 /* LaunchScreen.storyboard */; };
+		F915CF3E1EB4CECD00E15B27 /* StooqPooqTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F915CF3D1EB4CECD00E15B27 /* StooqPooqTests.swift */; };
+		F915CF491EB4CECD00E15B27 /* StooqPooqUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F915CF481EB4CECD00E15B27 /* StooqPooqUITests.swift */; };
+		F94312261EBB057B00664A16 /* StockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94312251EBB057B00664A16 /* StockTableViewCell.swift */; };
+		F94312281EBB092A00664A16 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94312271EBB092A00664A16 /* SettingsViewController.swift */; };
+		F943122E1EBB0C2E00664A16 /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F943122D1EBB0C2E00664A16 /* Appearance.swift */; };
+		F94312301EBB8C2900664A16 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F943122F1EBB8C2900664A16 /* GlobalConstants.swift */; };
+		F94312321EBBDA7000664A16 /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94312311EBBDA7000664A16 /* UIConstants.swift */; };
+		F94312351EBBE37D00664A16 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94312341EBBE37D00664A16 /* SettingsModel.swift */; };
+		F98F21041EB8FAA4000D0E96 /* GPWService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98F21031EB8FAA4000D0E96 /* GPWService.swift */; };
+		F98F21061EB90129000D0E96 /* StockIndexModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98F21051EB90129000D0E96 /* StockIndexModel.swift */; };
+		F98F21081EB9020C000D0E96 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98F21071EB9020C000D0E96 /* PersistenceManager.swift */; };
+		F98F210A1EB90861000D0E96 /* StocksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98F21091EB90861000D0E96 /* StocksViewModel.swift */; };
+		F9B4433C1EBC74B2001E41BA /* Date+StooqPooq.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B4433B1EBC74B2001E41BA /* Date+StooqPooq.swift */; };
+		F9B4433E1EBC83E4001E41BA /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9B4433D1EBC83E4001E41BA /* Settings.storyboard */; };
+		F9B443401EBC848B001E41BA /* Stocks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9B4433F1EBC848B001E41BA /* Stocks.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F915CF3A1EB4CECD00E15B27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F915CF1D1EB4CECD00E15B27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F915CF241EB4CECD00E15B27;
+			remoteInfo = StooqPooq;
+		};
+		F915CF451EB4CECD00E15B27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F915CF1D1EB4CECD00E15B27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F915CF241EB4CECD00E15B27;
+			remoteInfo = StooqPooq;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F8870084C74555DAEB0BCD2 /* Pods-StooqPooqTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StooqPooqTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StooqPooqTests/Pods-StooqPooqTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2284BCB4C4335F9F332F9FDE /* Pods_StooqPooqTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StooqPooqTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28D7FD0228F3D8ED96E6C648 /* Pods_StooqPooq.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StooqPooq.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EBCD6406207F13F82FEFE4F /* Pods-StooqPooq.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StooqPooq.release.xcconfig"; path = "Pods/Target Support Files/Pods-StooqPooq/Pods-StooqPooq.release.xcconfig"; sourceTree = "<group>"; };
+		9C00E00628313A1F6192937B /* Pods-StooqPooqUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StooqPooqUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StooqPooqUITests/Pods-StooqPooqUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9EC27CE8DD44F77B0715DD00 /* Pods-StooqPooq.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StooqPooq.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StooqPooq/Pods-StooqPooq.debug.xcconfig"; sourceTree = "<group>"; };
+		DCC91C39EE4F0892940DC13A /* Pods_StooqPooqUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StooqPooqUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEC67277360C11692025BAC7 /* Pods-StooqPooqTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StooqPooqTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StooqPooqTests/Pods-StooqPooqTests.release.xcconfig"; sourceTree = "<group>"; };
+		F915CF251EB4CECD00E15B27 /* StooqPooq.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StooqPooq.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F915CF281EB4CECD00E15B27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F915CF2A1EB4CECD00E15B27 /* StocksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksViewController.swift; sourceTree = "<group>"; };
+		F915CF2D1EB4CECD00E15B27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F915CF2F1EB4CECD00E15B27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F915CF321EB4CECD00E15B27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F915CF341EB4CECD00E15B27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F915CF391EB4CECD00E15B27 /* StooqPooqTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StooqPooqTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F915CF3D1EB4CECD00E15B27 /* StooqPooqTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StooqPooqTests.swift; sourceTree = "<group>"; };
+		F915CF3F1EB4CECD00E15B27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F915CF441EB4CECD00E15B27 /* StooqPooqUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StooqPooqUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F915CF481EB4CECD00E15B27 /* StooqPooqUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StooqPooqUITests.swift; sourceTree = "<group>"; };
+		F915CF4A1EB4CECD00E15B27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F94312251EBB057B00664A16 /* StockTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StockTableViewCell.swift; path = MainScreen/StockTableViewCell.swift; sourceTree = "<group>"; };
+		F94312271EBB092A00664A16 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = Settings/SettingsViewController.swift; sourceTree = "<group>"; };
+		F943122D1EBB0C2E00664A16 /* Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Appearance.swift; path = Other/Appearance.swift; sourceTree = "<group>"; };
+		F943122F1EBB8C2900664A16 /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobalConstants.swift; path = Other/GlobalConstants.swift; sourceTree = "<group>"; };
+		F94312311EBBDA7000664A16 /* UIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
+		F94312341EBBE37D00664A16 /* SettingsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsModel.swift; path = Settings/SettingsModel.swift; sourceTree = "<group>"; };
+		F98F21031EB8FAA4000D0E96 /* GPWService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GPWService.swift; path = Services/GPWService.swift; sourceTree = "<group>"; };
+		F98F21051EB90129000D0E96 /* StockIndexModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StockIndexModel.swift; path = MainScreen/StockIndexModel.swift; sourceTree = "<group>"; };
+		F98F21071EB9020C000D0E96 /* PersistenceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersistenceManager.swift; path = Managers/PersistenceManager.swift; sourceTree = "<group>"; };
+		F98F21091EB90861000D0E96 /* StocksViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StocksViewModel.swift; path = MainScreen/StocksViewModel.swift; sourceTree = "<group>"; };
+		F9B4433B1EBC74B2001E41BA /* Date+StooqPooq.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+StooqPooq.swift"; path = "Other/Date+StooqPooq.swift"; sourceTree = "<group>"; };
+		F9B4433D1EBC83E4001E41BA /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Settings.storyboard; path = Settings/Settings.storyboard; sourceTree = "<group>"; };
+		F9B4433F1EBC848B001E41BA /* Stocks.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Stocks.storyboard; path = MainScreen/Stocks.storyboard; sourceTree = "<group>"; };
+		FBCE689C156BF6E16FADBD24 /* Pods-StooqPooqUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StooqPooqUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StooqPooqUITests/Pods-StooqPooqUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F915CF221EB4CECD00E15B27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52FD4BAA0B94CC243CAD6EDB /* Pods_StooqPooq.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F915CF361EB4CECD00E15B27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97E91BBAAA10587C93FD67A0 /* Pods_StooqPooqTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F915CF411EB4CECD00E15B27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC6C2958BD753CA9A55A83C3 /* Pods_StooqPooqUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		36392AE3BBBD50BA8070FBEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28D7FD0228F3D8ED96E6C648 /* Pods_StooqPooq.framework */,
+				2284BCB4C4335F9F332F9FDE /* Pods_StooqPooqTests.framework */,
+				DCC91C39EE4F0892940DC13A /* Pods_StooqPooqUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C86C39B6684CCB90CA8A61C7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9EC27CE8DD44F77B0715DD00 /* Pods-StooqPooq.debug.xcconfig */,
+				2EBCD6406207F13F82FEFE4F /* Pods-StooqPooq.release.xcconfig */,
+				0F8870084C74555DAEB0BCD2 /* Pods-StooqPooqTests.debug.xcconfig */,
+				EEC67277360C11692025BAC7 /* Pods-StooqPooqTests.release.xcconfig */,
+				FBCE689C156BF6E16FADBD24 /* Pods-StooqPooqUITests.debug.xcconfig */,
+				9C00E00628313A1F6192937B /* Pods-StooqPooqUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F915CF1C1EB4CECD00E15B27 = {
+			isa = PBXGroup;
+			children = (
+				F915CF271EB4CECD00E15B27 /* StooqPooq */,
+				F915CF3C1EB4CECD00E15B27 /* StooqPooqTests */,
+				F915CF471EB4CECD00E15B27 /* StooqPooqUITests */,
+				F915CF261EB4CECD00E15B27 /* Products */,
+				C86C39B6684CCB90CA8A61C7 /* Pods */,
+				36392AE3BBBD50BA8070FBEE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F915CF261EB4CECD00E15B27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F915CF251EB4CECD00E15B27 /* StooqPooq.app */,
+				F915CF391EB4CECD00E15B27 /* StooqPooqTests.xctest */,
+				F915CF441EB4CECD00E15B27 /* StooqPooqUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F915CF271EB4CECD00E15B27 /* StooqPooq */ = {
+			isa = PBXGroup;
+			children = (
+				F915CF281EB4CECD00E15B27 /* AppDelegate.swift */,
+				F915CF2C1EB4CECD00E15B27 /* Main.storyboard */,
+				F915CF311EB4CECD00E15B27 /* LaunchScreen.storyboard */,
+				F915CF341EB4CECD00E15B27 /* Info.plist */,
+				F98F20FD1EB8F894000D0E96 /* MainScreen */,
+				F94312291EBB093300664A16 /* Settings */,
+				F98F20FC1EB8F88A000D0E96 /* Services */,
+				F98F20FB1EB8F875000D0E96 /* Managers */,
+				F943122C1EBB0C0A00664A16 /* Other */,
+			);
+			path = StooqPooq;
+			sourceTree = "<group>";
+		};
+		F915CF3C1EB4CECD00E15B27 /* StooqPooqTests */ = {
+			isa = PBXGroup;
+			children = (
+				F915CF3D1EB4CECD00E15B27 /* StooqPooqTests.swift */,
+				F915CF3F1EB4CECD00E15B27 /* Info.plist */,
+			);
+			path = StooqPooqTests;
+			sourceTree = "<group>";
+		};
+		F915CF471EB4CECD00E15B27 /* StooqPooqUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F915CF481EB4CECD00E15B27 /* StooqPooqUITests.swift */,
+				F915CF4A1EB4CECD00E15B27 /* Info.plist */,
+			);
+			path = StooqPooqUITests;
+			sourceTree = "<group>";
+		};
+		F94312241EBB055800664A16 /* VIews */ = {
+			isa = PBXGroup;
+			children = (
+				F94312251EBB057B00664A16 /* StockTableViewCell.swift */,
+			);
+			name = VIews;
+			sourceTree = "<group>";
+		};
+		F94312291EBB093300664A16 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F94312331EBBE36400664A16 /* Model */,
+				F943122B1EBB094800664A16 /* Storyboards */,
+				F943122A1EBB093D00664A16 /* ViewControllers */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		F943122A1EBB093D00664A16 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F94312271EBB092A00664A16 /* SettingsViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F943122B1EBB094800664A16 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F9B4433D1EBC83E4001E41BA /* Settings.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		F943122C1EBB0C0A00664A16 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				F915CF2F1EB4CECD00E15B27 /* Assets.xcassets */,
+				F943122D1EBB0C2E00664A16 /* Appearance.swift */,
+				F943122F1EBB8C2900664A16 /* GlobalConstants.swift */,
+				F94312311EBBDA7000664A16 /* UIConstants.swift */,
+				F9B4433B1EBC74B2001E41BA /* Date+StooqPooq.swift */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		F94312331EBBE36400664A16 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F94312341EBBE37D00664A16 /* SettingsModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F98F20FB1EB8F875000D0E96 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				F98F21071EB9020C000D0E96 /* PersistenceManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		F98F20FC1EB8F88A000D0E96 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F98F21031EB8FAA4000D0E96 /* GPWService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		F98F20FD1EB8F894000D0E96 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				F98F21011EB8F952000D0E96 /* Model */,
+				F98F20FF1EB8F8BB000D0E96 /* Storyboards */,
+				F94312241EBB055800664A16 /* VIews */,
+				F98F20FE1EB8F8B1000D0E96 /* ViewControllers */,
+				F98F21001EB8F92F000D0E96 /* ViewModel */,
+			);
+			name = MainScreen;
+			sourceTree = "<group>";
+		};
+		F98F20FE1EB8F8B1000D0E96 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F915CF2A1EB4CECD00E15B27 /* StocksViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F98F20FF1EB8F8BB000D0E96 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F9B4433F1EBC848B001E41BA /* Stocks.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		F98F21001EB8F92F000D0E96 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F98F21091EB90861000D0E96 /* StocksViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		F98F21011EB8F952000D0E96 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F98F21051EB90129000D0E96 /* StockIndexModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F915CF241EB4CECD00E15B27 /* StooqPooq */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F915CF4D1EB4CECD00E15B27 /* Build configuration list for PBXNativeTarget "StooqPooq" */;
+			buildPhases = (
+				8C0CDC6803EC53A1E971B991 /* [CP] Check Pods Manifest.lock */,
+				F915CF211EB4CECD00E15B27 /* Sources */,
+				F915CF221EB4CECD00E15B27 /* Frameworks */,
+				F915CF231EB4CECD00E15B27 /* Resources */,
+				90DE5845EB188C0B602372BF /* [CP] Embed Pods Frameworks */,
+				9179FB96694EB97C23FAEF90 /* [CP] Copy Pods Resources */,
+				F98F21021EB8F99F000D0E96 /* Generate Storyboard Constants */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StooqPooq;
+			productName = StooqPooq;
+			productReference = F915CF251EB4CECD00E15B27 /* StooqPooq.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F915CF381EB4CECD00E15B27 /* StooqPooqTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F915CF501EB4CECD00E15B27 /* Build configuration list for PBXNativeTarget "StooqPooqTests" */;
+			buildPhases = (
+				4D7E3D4C2ACDDA1DF6C6AB03 /* [CP] Check Pods Manifest.lock */,
+				F915CF351EB4CECD00E15B27 /* Sources */,
+				F915CF361EB4CECD00E15B27 /* Frameworks */,
+				F915CF371EB4CECD00E15B27 /* Resources */,
+				EF696AEBED1F595FD10FBCF9 /* [CP] Embed Pods Frameworks */,
+				F0E5B336F0D3B3C997371929 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F915CF3B1EB4CECD00E15B27 /* PBXTargetDependency */,
+			);
+			name = StooqPooqTests;
+			productName = StooqPooqTests;
+			productReference = F915CF391EB4CECD00E15B27 /* StooqPooqTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F915CF431EB4CECD00E15B27 /* StooqPooqUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F915CF531EB4CECD00E15B27 /* Build configuration list for PBXNativeTarget "StooqPooqUITests" */;
+			buildPhases = (
+				3569ADDF883D8B54E91CA24C /* [CP] Check Pods Manifest.lock */,
+				F915CF401EB4CECD00E15B27 /* Sources */,
+				F915CF411EB4CECD00E15B27 /* Frameworks */,
+				F915CF421EB4CECD00E15B27 /* Resources */,
+				2CDD12D264432DC916775266 /* [CP] Embed Pods Frameworks */,
+				6BF9566937129DCCD7F324F3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F915CF461EB4CECD00E15B27 /* PBXTargetDependency */,
+			);
+			name = StooqPooqUITests;
+			productName = StooqPooqUITests;
+			productReference = F915CF441EB4CECD00E15B27 /* StooqPooqUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F915CF1D1EB4CECD00E15B27 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = carlst;
+				TargetAttributes = {
+					F915CF241EB4CECD00E15B27 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = K93H863522;
+						ProvisioningStyle = Automatic;
+					};
+					F915CF381EB4CECD00E15B27 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = K93H863522;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F915CF241EB4CECD00E15B27;
+					};
+					F915CF431EB4CECD00E15B27 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = K93H863522;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F915CF241EB4CECD00E15B27;
+					};
+				};
+			};
+			buildConfigurationList = F915CF201EB4CECD00E15B27 /* Build configuration list for PBXProject "StooqPooq" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F915CF1C1EB4CECD00E15B27;
+			productRefGroup = F915CF261EB4CECD00E15B27 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F915CF241EB4CECD00E15B27 /* StooqPooq */,
+				F915CF381EB4CECD00E15B27 /* StooqPooqTests */,
+				F915CF431EB4CECD00E15B27 /* StooqPooqUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F915CF231EB4CECD00E15B27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F915CF331EB4CECD00E15B27 /* LaunchScreen.storyboard in Resources */,
+				F9B443401EBC848B001E41BA /* Stocks.storyboard in Resources */,
+				F915CF301EB4CECD00E15B27 /* Assets.xcassets in Resources */,
+				F915CF2E1EB4CECD00E15B27 /* Main.storyboard in Resources */,
+				F9B4433E1EBC83E4001E41BA /* Settings.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F915CF371EB4CECD00E15B27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F915CF421EB4CECD00E15B27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CDD12D264432DC916775266 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StooqPooqUITests/Pods-StooqPooqUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3569ADDF883D8B54E91CA24C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4D7E3D4C2ACDDA1DF6C6AB03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6BF9566937129DCCD7F324F3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StooqPooqUITests/Pods-StooqPooqUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C0CDC6803EC53A1E971B991 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		90DE5845EB188C0B602372BF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StooqPooq/Pods-StooqPooq-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9179FB96694EB97C23FAEF90 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StooqPooq/Pods-StooqPooq-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF696AEBED1F595FD10FBCF9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StooqPooqTests/Pods-StooqPooqTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0E5B336F0D3B3C997371929 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StooqPooqTests/Pods-StooqPooqTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F98F21021EB8F99F000D0E96 /* Generate Storyboard Constants */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Storyboard Constants";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo $(bash -l -c  \"source ~/.bash_profile && cd StooqPooq && bundle exec sbconstants -w UIConstants.swift\")";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F915CF211EB4CECD00E15B27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F94312351EBBE37D00664A16 /* SettingsModel.swift in Sources */,
+				F94312261EBB057B00664A16 /* StockTableViewCell.swift in Sources */,
+				F943122E1EBB0C2E00664A16 /* Appearance.swift in Sources */,
+				F94312301EBB8C2900664A16 /* GlobalConstants.swift in Sources */,
+				F98F21041EB8FAA4000D0E96 /* GPWService.swift in Sources */,
+				F9B4433C1EBC74B2001E41BA /* Date+StooqPooq.swift in Sources */,
+				F98F21081EB9020C000D0E96 /* PersistenceManager.swift in Sources */,
+				F98F21061EB90129000D0E96 /* StockIndexModel.swift in Sources */,
+				F915CF2B1EB4CECD00E15B27 /* StocksViewController.swift in Sources */,
+				F915CF291EB4CECD00E15B27 /* AppDelegate.swift in Sources */,
+				F94312321EBBDA7000664A16 /* UIConstants.swift in Sources */,
+				F98F210A1EB90861000D0E96 /* StocksViewModel.swift in Sources */,
+				F94312281EBB092A00664A16 /* SettingsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F915CF351EB4CECD00E15B27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F915CF3E1EB4CECD00E15B27 /* StooqPooqTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F915CF401EB4CECD00E15B27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F915CF491EB4CECD00E15B27 /* StooqPooqUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F915CF3B1EB4CECD00E15B27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F915CF241EB4CECD00E15B27 /* StooqPooq */;
+			targetProxy = F915CF3A1EB4CECD00E15B27 /* PBXContainerItemProxy */;
+		};
+		F915CF461EB4CECD00E15B27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F915CF241EB4CECD00E15B27 /* StooqPooq */;
+			targetProxy = F915CF451EB4CECD00E15B27 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F915CF2C1EB4CECD00E15B27 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F915CF2D1EB4CECD00E15B27 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F915CF311EB4CECD00E15B27 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F915CF321EB4CECD00E15B27 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F915CF4B1EB4CECD00E15B27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F915CF4C1EB4CECD00E15B27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F915CF4E1EB4CECD00E15B27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EC27CE8DD44F77B0715DD00 /* Pods-StooqPooq.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K93H863522;
+				INFOPLIST_FILE = StooqPooq/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlst.StooqPooq;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F915CF4F1EB4CECD00E15B27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EBCD6406207F13F82FEFE4F /* Pods-StooqPooq.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K93H863522;
+				INFOPLIST_FILE = StooqPooq/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlst.StooqPooq;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F915CF511EB4CECD00E15B27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F8870084C74555DAEB0BCD2 /* Pods-StooqPooqTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = K93H863522;
+				INFOPLIST_FILE = StooqPooqTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlst.StooqPooqTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StooqPooq.app/StooqPooq";
+			};
+			name = Debug;
+		};
+		F915CF521EB4CECD00E15B27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEC67277360C11692025BAC7 /* Pods-StooqPooqTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = K93H863522;
+				INFOPLIST_FILE = StooqPooqTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlst.StooqPooqTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StooqPooq.app/StooqPooq";
+			};
+			name = Release;
+		};
+		F915CF541EB4CECD00E15B27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBCE689C156BF6E16FADBD24 /* Pods-StooqPooqUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = K93H863522;
+				INFOPLIST_FILE = StooqPooqUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlst.StooqPooqUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = StooqPooq;
+			};
+			name = Debug;
+		};
+		F915CF551EB4CECD00E15B27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C00E00628313A1F6192937B /* Pods-StooqPooqUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = K93H863522;
+				INFOPLIST_FILE = StooqPooqUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlst.StooqPooqUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = StooqPooq;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F915CF201EB4CECD00E15B27 /* Build configuration list for PBXProject "StooqPooq" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F915CF4B1EB4CECD00E15B27 /* Debug */,
+				F915CF4C1EB4CECD00E15B27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F915CF4D1EB4CECD00E15B27 /* Build configuration list for PBXNativeTarget "StooqPooq" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F915CF4E1EB4CECD00E15B27 /* Debug */,
+				F915CF4F1EB4CECD00E15B27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F915CF501EB4CECD00E15B27 /* Build configuration list for PBXNativeTarget "StooqPooqTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F915CF511EB4CECD00E15B27 /* Debug */,
+				F915CF521EB4CECD00E15B27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F915CF531EB4CECD00E15B27 /* Build configuration list for PBXNativeTarget "StooqPooqUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F915CF541EB4CECD00E15B27 /* Debug */,
+				F915CF551EB4CECD00E15B27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F915CF1D1EB4CECD00E15B27 /* Project object */;
+}

@@ -1,0 +1,44 @@
+PODS:
+  - Fuzi (1.0.1)
+  - ObjectMapper (2.2.1)
+  - Realm (2.6.2):
+    - Realm/Headers (= 2.6.2)
+  - Realm/Headers (2.6.2)
+  - RealmSwift (2.6.2):
+    - Realm (= 2.6.2)
+
+DEPENDENCIES:
+  - Fuzi (~> 1.0.0)
+  - ObjectMapper (~> 2.2)
+  - Realm (from `https://github.com/realm/realm-cocoa.git`, branch `master`)
+  - RealmSwift (from `https://github.com/realm/realm-cocoa.git`, branch `master`)
+
+EXTERNAL SOURCES:
+  Realm:
+    :branch: master
+    :git: https://github.com/realm/realm-cocoa.git
+    :submodules: true
+  RealmSwift:
+    :branch: master
+    :git: https://github.com/realm/realm-cocoa.git
+    :submodules: true
+
+CHECKOUT OPTIONS:
+  Realm:
+    :commit: 542756531981ffe74ea837bece1d359e4d3267fc
+    :git: https://github.com/realm/realm-cocoa.git
+    :submodules: true
+  RealmSwift:
+    :commit: 542756531981ffe74ea837bece1d359e4d3267fc
+    :git: https://github.com/realm/realm-cocoa.git
+    :submodules: true
+
+SPEC CHECKSUMS:
+  Fuzi: 851403654bac55675aaeed815d0c8a1d3e3d3e8b
+  ObjectMapper: 41e43e1a89f8060ef5ea5d04ba852e269a621d68
+  Realm: 85b8729618fb76270efcf8c94218c1cbe94ba4ea
+  RealmSwift: 467233dd8beb90eab2cde75ff4703860adee294b
+
+PODFILE CHECKSUM: 5833f962e3b721d0063aaf09a86e5441d83b5a1a
+
+COCOAPODS: 1.2.0

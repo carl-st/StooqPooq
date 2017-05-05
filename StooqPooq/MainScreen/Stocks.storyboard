@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="egC-8n-x6e">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--GPW Stocks-->
+        <scene sceneID="Gyf-WD-Ke6">
+            <objects>
+                <viewController id="egC-8n-x6e" customClass="StocksViewController" customModule="StooqPooq" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ci5-Rd-Txc"/>
+                        <viewControllerLayoutGuide type="bottom" id="7Nj-eh-pbx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wmh-4C-j37">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="55" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZNT-8w-3Sq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="stockCell" rowHeight="55" id="266-7B-cfr" customClass="StockTableViewCell" customModule="StooqPooq" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="55"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="266-7B-cfr" id="YeJ-lP-DFZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WIG20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C78-58-ntV">
+                                                    <rect key="frame" x="8" y="8" width="276" height="23"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="23" id="oJT-bi-ZJL"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4,38" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Chn-gY-AVP">
+                                                    <rect key="frame" x="292" y="7" width="75" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="4Ap-KJ-cr0"/>
+                                                        <constraint firstAttribute="width" constant="75" id="ANU-T8-BU6"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:43" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Iu-OW-xmU">
+                                                    <rect key="frame" x="8" y="31" width="276" height="16"/>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="6Iu-OW-xmU" secondAttribute="bottom" constant="8" id="ISC-EQ-Br0"/>
+                                                <constraint firstItem="6Iu-OW-xmU" firstAttribute="top" secondItem="C78-58-ntV" secondAttribute="bottom" id="JNQ-x2-KiZ"/>
+                                                <constraint firstItem="Chn-gY-AVP" firstAttribute="leading" secondItem="C78-58-ntV" secondAttribute="trailing" constant="8" id="VaY-z0-x2O"/>
+                                                <constraint firstAttribute="trailing" secondItem="Chn-gY-AVP" secondAttribute="trailing" constant="8" id="Xik-T7-muI"/>
+                                                <constraint firstAttribute="bottom" secondItem="Chn-gY-AVP" secondAttribute="bottom" constant="8" id="b4G-FP-jfO"/>
+                                                <constraint firstItem="C78-58-ntV" firstAttribute="leading" secondItem="YeJ-lP-DFZ" secondAttribute="leading" constant="8" id="edS-dm-YmW"/>
+                                                <constraint firstItem="6Iu-OW-xmU" firstAttribute="leading" secondItem="YeJ-lP-DFZ" secondAttribute="leading" constant="8" id="jrh-fT-DtJ"/>
+                                                <constraint firstItem="C78-58-ntV" firstAttribute="top" secondItem="YeJ-lP-DFZ" secondAttribute="top" constant="8" id="lD3-De-7wu"/>
+                                                <constraint firstItem="Chn-gY-AVP" firstAttribute="leading" secondItem="6Iu-OW-xmU" secondAttribute="trailing" constant="8" id="vH8-6y-aqr"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="indexNameLabel" destination="C78-58-ntV" id="wVw-Fp-n4Q"/>
+                                            <outlet property="indexTimeLabel" destination="6Iu-OW-xmU" id="fy6-Xd-H1M"/>
+                                            <outlet property="indexValueLabel" destination="Chn-gY-AVP" id="ZFT-lU-lXM"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="egC-8n-x6e" id="yhc-XC-g9E"/>
+                                    <outlet property="delegate" destination="egC-8n-x6e" id="WV3-zH-L4U"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZNT-8w-3Sq" firstAttribute="leading" secondItem="wmh-4C-j37" secondAttribute="leading" id="COB-Fn-Csg"/>
+                            <constraint firstAttribute="trailing" secondItem="ZNT-8w-3Sq" secondAttribute="trailing" id="XuJ-6R-ucL"/>
+                            <constraint firstItem="7Nj-eh-pbx" firstAttribute="top" secondItem="ZNT-8w-3Sq" secondAttribute="bottom" id="bJh-mW-aKg"/>
+                            <constraint firstItem="ZNT-8w-3Sq" firstAttribute="top" secondItem="wmh-4C-j37" secondAttribute="top" id="bPn-aC-7BZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="GPW Stocks" id="SeL-hA-JyG"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="ZNT-8w-3Sq" id="chL-vz-eAa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SNk-fj-Xcb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1600.8" y="-153.37331334332833"/>
+        </scene>
+    </scenes>
+</document>
