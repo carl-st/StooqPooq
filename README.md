@@ -26,3 +26,6 @@ Install pods with following command (this will happen if a library is added or r
 ```
 pod install
 ```
+
+## Credits ##
+App Icon graphic made by Freepik from www.flaticon.com
